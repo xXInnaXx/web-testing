@@ -35,7 +35,7 @@ public class OrderCardTest {
 
     @Test
     public void shouldSendForm() throws InterruptedException {
-        driver.get("http://127.0.0.1:9999");
+        driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Иванов Иван");
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79111234455");
         driver.findElement(By.cssSelector(".checkbox__box")).click();
